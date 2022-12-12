@@ -30,6 +30,30 @@ public class Operators {
         System.out.println(p&&q);
         System.out.println(p||q);
 
+        int res = 1 + 2;
+        System.out.println(res);
+
+        res -=  1; //res = res - 1;
+        System.out.println(res);
+
+        res *= 2;  //res = res*2;
+        System.out.println(res);
+
+        res /= 2; //res = res/2;
+        System.out.println(res);
+
+        res  += 8; //res = res+8;
+        System.out.println(res);
+        
+        res %= 7; //res = res%7;
+        System.out.println(res);
+
+        
+
+
+
+
+
 
 
 
