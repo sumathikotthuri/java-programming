@@ -55,6 +55,14 @@ public class ControlStructures {
         System.out.println("reverse of the number "+num+" using doWhile is : "
             +cs.reverseNumberWithDoWhile(num));
         
+        cs.isArmstrongNumber(153);
+        cs.isArmstrongNumber(123);
+
+        cs.isLuckyNumber(1623);
+        cs.isLuckyNumber(1236);
+
+        
+        
     }
 
 
@@ -99,4 +107,36 @@ public class ControlStructures {
         return reversedString;
     }
     
+    void isArmstrongNumber(int number){
+
+        String numString = Integer.toString(number);
+        int sumOfCubes = 0;
+        for(int i=0;i<numString.length();i++){
+            int digit =  Character.getNumericValue(numString.charAt(i)); 
+            sumOfCubes += Math.pow(digit,3);
+        }
+        if(sumOfCubes == number)
+            System.out.println("The number "+number+" is Armstrong number");
+        else
+            System.out.println("The number "+number+" is not Armstrong number");
+        
+    }
+
+    void isLuckyNumber(int number){
+        String numString = Integer.toString(number);       
+
+        boolean luckyNumber = true;
+        for(int i = 1;i<numString.length();i=i+2){            
+            if(!(Character.getNumericValue(numString.charAt(i))%3==0)){
+                luckyNumber = false;
+                break;
+            }
+        }
+
+        if(luckyNumber)
+            System.out.println("The number "+number+" is a lucky Number");
+        else
+            System.out.println("The number "+number+" is not a lucky Number");        
+
+    }
 }
