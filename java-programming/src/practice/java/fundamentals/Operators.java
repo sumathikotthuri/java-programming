@@ -9,6 +9,7 @@ public class Operators {
         int z = y;
         z++;
         System.out.println(y);
+        System.out.println(z);
 
 
         int m = 1;

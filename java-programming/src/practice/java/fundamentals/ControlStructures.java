@@ -44,7 +44,8 @@ public class ControlStructures {
         int sum = 0;
         for(int p=0,q=0;p<5&q<5;++p,q=p+1)
             sum+=p; 
-            
+         
+        System.out.println("sum = "+sum);            
             
         ControlStructures cs = new ControlStructures();
         int num = 201231417;
