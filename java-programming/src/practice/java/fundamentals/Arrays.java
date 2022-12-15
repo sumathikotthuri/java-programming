@@ -5,11 +5,11 @@ public class Arrays {
     public static void main(String[] args) {
 
         int[][] score = new int[2][];
-        int[][] score1 = new int[2][2];
-        int[][] score2 = new int[2][];
+        //int[][] score1 = new int[2][2];  //valid declration
+        //int[][] score2 = new int[2][];  //valid declaration
             score[0] = new int[2];
            
-        int[] a;
+        //int[] a;  //Valid declaration
         int[] arr = {12,13,14,44};
 
         for(float f: arr){
