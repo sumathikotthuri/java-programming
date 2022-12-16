@@ -12,7 +12,7 @@ public class ClassAndObjects {
     // practice/java/fundamentals/ClassAndObjects (wrong name: ClassAndObjects)
 
     public static void main(String[] args) {
-        
+
         Student s1 = new Student();
         s1.setStudentId(1001);
         s1.setName("Jacob");
@@ -27,8 +27,20 @@ public class ClassAndObjects {
         System.out.println("Residential Status\t:"+s1.getResidentialStatus());
 
 
+        Chocolate c = new Chocolate(101,"Cadbury",12,10);
+        System.out.println("Barcode :"+c.getBarCode());
+        System.out.println("Name :"+c.getName());
+        System.out.println("Weight :"+c.getWeight());
+        System.out.println("Cost :"+c.getCost());
 
-
+        c.setBarCode(102);
+        c.setName("Hershey's");
+        c.setWeight(24);
+        c.setCost(50);
+        System.out.println("Barcode :"+c.getBarCode());
+        System.out.println("Name :"+c.getName());
+        System.out.println("Weight :"+c.getWeight());
+        System.out.println("Cost :"+c.getCost());
 
     }
 
@@ -75,4 +87,56 @@ class Student{
 
 }
 
+
+class Chocolate{
+
+    private int barCode;
+    private String name;
+    private double weight;
+    private double cost;
+
+    public int getBarCode() {
+        return barCode;
+    }
+
+    public void setBarCode(int barCode) {
+        this.barCode = barCode;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
+
+    Chocolate(){
+        System.out.println("Default Constructor");
+    }
+
+    Chocolate(int barCode,String name,double weight,double cost){
+        this.barCode = barCode;
+        this.name = name;
+        this.weight = weight;
+        this.cost = cost;
+    }
+    
+}
 
